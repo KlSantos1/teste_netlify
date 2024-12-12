@@ -31,7 +31,7 @@
             "name": "que estou na página de cadastro de usuário do Signo",
             "result": {
               "status": "passed",
-              "duration": 9008000000
+              "duration": 6742000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "o formulário de cadastro de usuário deve apresentar os seguintes campos:",
             "result": {
               "status": "passed",
-              "duration": 3940000000
+              "duration": 2243000000
             }
           }
         ]
@@ -91,7 +91,7 @@
             "name": "que estou na página de cadastro de usuário do Signo",
             "result": {
               "status": "passed",
-              "duration": 8273000000
+              "duration": 6242000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "preencho as seguintes informações de cadastro de usuário:",
             "result": {
               "status": "passed",
-              "duration": 1359000000
+              "duration": 1610000000
             }
           },
           {
@@ -179,7 +179,7 @@
             "name": "preencho os seguintes campos de cadastro de usuário:",
             "result": {
               "status": "passed",
-              "duration": 6659000000
+              "duration": 8199000000
             }
           },
           {
@@ -189,7 +189,7 @@
             "name": "clico no botão \"Salvar\"",
             "result": {
               "status": "passed",
-              "duration": 268000000
+              "duration": 386000000
             }
           },
           {
@@ -199,7 +199,7 @@
             "name": "o sistema deve exibir mensagens de erro indicando que os campos são obrigatórios",
             "result": {
               "status": "passed",
-              "duration": 150000000
+              "duration": 215000000
             }
           }
         ]
@@ -228,7 +228,7 @@
             "name": "que estou na página de cadastro de usuário do Signo",
             "result": {
               "status": "passed",
-              "duration": 8480000000
+              "duration": 7977000000
             }
           },
           {
@@ -259,7 +259,7 @@
             "name": "preencho as seguintes informações de cadastro de usuário:",
             "result": {
               "status": "passed",
-              "duration": 1231000000
+              "duration": 1423000000
             }
           },
           {
@@ -344,7 +344,7 @@
             "name": "preencho os seguintes campos de cadastro de usuário:",
             "result": {
               "status": "passed",
-              "duration": 16703000000
+              "duration": 19930000000
             }
           },
           {
@@ -354,7 +354,7 @@
             "name": "clico no botão \"Salvar\"",
             "result": {
               "status": "passed",
-              "duration": 457000000
+              "duration": 619000000
             }
           },
           {
@@ -364,7 +364,7 @@
             "name": "o sistema deve exibir uma mensagem de sucesso indicando que o usuário foi cadastrado",
             "result": {
               "status": "passed",
-              "duration": 862000000
+              "duration": 544000000
             }
           }
         ]
@@ -393,7 +393,7 @@
             "name": "que estou na página de cadastro de usuário do Signo",
             "result": {
               "status": "passed",
-              "duration": 8578000000
+              "duration": 8506000000
             }
           },
           {
@@ -424,7 +424,7 @@
             "name": "preencho as seguintes informações de cadastro de usuário:",
             "result": {
               "status": "passed",
-              "duration": 1235000000
+              "duration": 1212000000
             }
           },
           {
@@ -523,7 +523,7 @@
             "name": "preencho os seguintes campos de cadastro de usuário:",
             "result": {
               "status": "passed",
-              "duration": 25361000000
+              "duration": 19556000000
             }
           },
           {
@@ -533,7 +533,7 @@
             "name": "clico no botão \"Salvar\"",
             "result": {
               "status": "passed",
-              "duration": 1014000000
+              "duration": 526000000
             }
           },
           {
@@ -543,7 +543,7 @@
             "name": "o sistema deve exibir uma mensagem de sucesso indicando que o usuário foi cadastrado",
             "result": {
               "status": "passed",
-              "duration": 822000000
+              "duration": 578000000
             }
           }
         ]
@@ -572,7 +572,7 @@
             "name": "que estou na página de cadastro de usuário do Signo",
             "result": {
               "status": "passed",
-              "duration": 12703000000
+              "duration": 5978000000
             }
           },
           {
@@ -603,7 +603,7 @@
             "name": "preencho as seguintes informações de cadastro de usuário:",
             "result": {
               "status": "passed",
-              "duration": 2615000000
+              "duration": 1031000000
             }
           },
           {
@@ -634,7 +634,7 @@
             "name": "preencho as seguintes informações de cadastro de usuário:",
             "result": {
               "status": "passed",
-              "duration": 2181000000
+              "duration": 1557000000
             }
           },
           {
@@ -644,7 +644,7 @@
             "name": "clico no botão \"Salvar\"",
             "result": {
               "status": "passed",
-              "duration": 453000000
+              "duration": 331000000
             }
           },
           {
@@ -701,7 +701,7 @@
             "name": "o sistema deve manter os demais campos de cadastro desabilitados",
             "result": {
               "status": "passed",
-              "duration": 389000000
+              "duration": 332000000
             }
           }
         ]
