@@ -1,24 +1,24 @@
 [
   {
     "keyword": "Funcionalidade",
-    "name": "Cadastro de Usuário Preposto no Sistema Signo",
+    "name": "Consulta de Usuário Escrevente/Preposto no Sistema Signo",
     "line": 2,
-    "id": "cadastro-de-usuário-preposto-no-sistema-signo",
+    "id": "consulta-de-usuário-escrevente/preposto-no-sistema-signo",
     "tags": [],
-    "uri": "cadastro-usuario-preposto.feature",
+    "uri": "consulta-usuario-preposto.feature",
     "elements": [
       {
-        "id": "cadastro-de-usuário-preposto-no-sistema-signo;verificar-se-o-formulário-de-cadastro-apresenta-todos-os-campos-necessários",
+        "id": "consulta-de-usuário-escrevente/preposto-no-sistema-signo;cadastrar-e-consultar-usuário-do-tipo-escrevente/preposto-por-nome",
         "keyword": "Scenario",
         "line": 8,
-        "name": "Verificar se o formulário de cadastro apresenta todos os campos necessários",
+        "name": "Cadastrar e Consultar usuário do tipo Escrevente/Preposto por nome",
         "tags": [
           {
-            "name": "@cadastro-usuario",
+            "name": "@consulta-usuario",
             "line": 7
           },
           {
-            "name": "@cadastro-usuario",
+            "name": "@consulta-preposto",
             "line": 7
           }
         ],
@@ -31,67 +31,7 @@
             "name": "que estou na página de cadastro de usuário do Signo",
             "result": {
               "status": "passed",
-              "duration": 8691000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "qualificacao",
-                      "perfil",
-                      "tipoUsuario",
-                      "campos"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Preposto",
-                      "",
-                      "",
-                      "CPF,Nome,Email,Data de Nascimento,Gênero,Celular,Estado do cartório,Município do cartório,Cartório,CNS,CEP,Numero,Complemento"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Então ",
-            "line": 9,
-            "name": "o formulário de cadastro de usuário deve apresentar os seguintes campos:",
-            "result": {
-              "status": "passed",
-              "duration": 2967000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "cadastro-de-usuário-preposto-no-sistema-signo;cadastro-de-usuário-com-dados-obrigatórios-não-preenchidos-para-pessoa-perfil-escrevente/preposto",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Cadastro de usuário com dados obrigatórios não preenchidos para Pessoa Perfil Escrevente/Preposto",
-        "tags": [
-          {
-            "name": "@cadastro-usuario",
-            "line": 13
-          },
-          {
-            "name": "@cadastro-usuario",
-            "line": 13
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Dado ",
-            "line": 5,
-            "name": "que estou na página de cadastro de usuário do Signo",
-            "result": {
-              "status": "passed",
-              "duration": 9372000000
+              "duration": 7977000000
             }
           },
           {
@@ -118,11 +58,11 @@
               }
             ],
             "keyword": "Quando ",
-            "line": 15,
+            "line": 9,
             "name": "preencho as seguintes informações de cadastro de usuário:",
             "result": {
               "status": "passed",
-              "duration": 1748000000
+              "duration": 1227000000
             }
           },
           {
@@ -159,9 +99,37 @@
                   },
                   {
                     "cells": [
+                      "dtNascimento",
+                      "dtNascimento",
+                      "calendar"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "genero",
+                      "genero",
+                      "dropdown"
+                    ]
+                  },
+                  {
+                    "cells": [
                       "celular",
                       "celular",
                       "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "cartorio",
+                      "cartorio",
+                      "cartorio"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "attachment",
+                      "attachment",
+                      "attachment"
                     ]
                   },
                   {
@@ -170,16 +138,30 @@
                       "cep",
                       "input"
                     ]
+                  },
+                  {
+                    "cells": [
+                      "numero",
+                      "numero",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "complemento",
+                      "complemento",
+                      "input"
+                    ]
                   }
                 ]
               }
             ],
             "keyword": "E ",
-            "line": 18,
+            "line": 12,
             "name": "preencho os seguintes campos de cadastro de usuário:",
             "result": {
               "status": "passed",
-              "duration": 10257000000
+              "duration": 31829000000
             }
           },
           {
@@ -189,199 +171,139 @@
             "name": "clico no botão \"Salvar\"",
             "result": {
               "status": "passed",
-              "duration": 2381000000
+              "duration": 3260000000
             }
           },
           {
             "arguments": [],
             "keyword": "Então ",
             "line": 26,
-            "name": "o sistema deve exibir mensagens de erro indicando que os campos são obrigatórios",
+            "name": "o sistema deve exibir uma mensagem de sucesso indicando que o usuário foi cadastrado",
             "result": {
               "status": "passed",
-              "duration": 101000000
+              "duration": 525000000
             }
-          }
-        ]
-      },
-      {
-        "id": "cadastro-de-usuário-preposto-no-sistema-signo;cadastro-de-usuário-com-dados-opcionais-não-preenchidos-para-pessoa-perfil-escrevente/preposto",
-        "keyword": "Scenario",
-        "line": 29,
-        "name": "Cadastro de usuário com dados opcionais não preenchidos para Pessoa Perfil Escrevente/Preposto",
-        "tags": [
-          {
-            "name": "@cadastro-usuario",
-            "line": 28
           },
-          {
-            "name": "@cadastro-usuario",
-            "line": 28
-          }
-        ],
-        "type": "scenario",
-        "steps": [
           {
             "arguments": [],
-            "keyword": "Dado ",
-            "line": 5,
-            "name": "que estou na página de cadastro de usuário do Signo",
-            "result": {
-              "status": "passed",
-              "duration": 7873000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "campo",
-                      "formcontrolname",
-                      "valor",
-                      "type"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "qualificação",
-                      "qualificacao",
-                      "Preposto",
-                      "dropdown"
-                    ]
-                  }
-                ]
-              }
-            ],
             "keyword": "Quando ",
-            "line": 30,
-            "name": "preencho as seguintes informações de cadastro de usuário:",
+            "line": 27,
+            "name": "vou à página de consulta de usuário",
             "result": {
               "status": "passed",
-              "duration": 1479000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "campo",
-                      "formcontrolname",
-                      "type"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "cpf",
-                      "cpfCnpj",
-                      "input"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "nome",
-                      "nome",
-                      "input"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "email",
-                      "email",
-                      "input"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "celular",
-                      "celular",
-                      "input"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "cartorio",
-                      "cartorio",
-                      "cartorio"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "attachment",
-                      "attachment",
-                      "attachment"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "cep",
-                      "cep",
-                      "input"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "numero",
-                      "numero",
-                      "input"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "complemento",
-                      "complemento",
-                      "input"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "E ",
-            "line": 33,
-            "name": "preencho os seguintes campos de cadastro de usuário:",
-            "result": {
-              "status": "passed",
-              "duration": 21030000000
+              "duration": 3245000000
             }
           },
           {
             "arguments": [],
             "keyword": "E ",
-            "line": 44,
-            "name": "clico no botão \"Salvar\"",
+            "line": 28,
+            "name": "busco o usuário pelo nome cadastrado",
             "result": {
               "status": "passed",
-              "duration": 2686000000
+              "duration": 4221000000
             }
           },
           {
             "arguments": [],
             "keyword": "Então ",
-            "line": 45,
-            "name": "o sistema deve exibir uma mensagem de sucesso indicando que o usuário foi cadastrado",
+            "line": 29,
+            "name": "devo visualizar o usuário na grid",
             "result": {
               "status": "passed",
-              "duration": 470000000
+              "duration": 753000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "label",
+                      "campo"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CPF",
+                      "cpf"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Nome",
+                      "nome"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Email",
+                      "email"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Data de Nascimento",
+                      "dtNascimentoInvertida"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Gênero",
+                      "genero"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Celular",
+                      "celular"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CEP",
+                      "cep"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Numero",
+                      "numero"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complemento",
+                      "complemento"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "E ",
+            "line": 30,
+            "name": "a consulta exibir os seguintes campos do usuário:",
+            "result": {
+              "status": "passed",
+              "duration": 8863000000
             }
           }
         ]
       },
       {
-        "id": "cadastro-de-usuário-preposto-no-sistema-signo;cadastro-de-usuário-com-dados-opcionais-preenchidos-para-pessoa-perfil-escrevente/preposto",
+        "id": "consulta-de-usuário-escrevente/preposto-no-sistema-signo;cadastrar-e-consultar-usuário-do-tipo-escrevente/preposto-por-cpf",
         "keyword": "Scenario",
-        "line": 48,
-        "name": "Cadastro de usuário com dados opcionais preenchidos para Pessoa Perfil Escrevente/Preposto",
+        "line": 43,
+        "name": "Cadastrar e Consultar usuário do tipo Escrevente/Preposto por CPF",
         "tags": [
           {
-            "name": "@cadastro-usuario",
-            "line": 47
+            "name": "@consulta-usuario",
+            "line": 42
           },
           {
-            "name": "@cadastro-usuario",
-            "line": 47
+            "name": "@consulta-preposto",
+            "line": 42
           }
         ],
         "type": "scenario",
@@ -393,7 +315,7 @@
             "name": "que estou na página de cadastro de usuário do Signo",
             "result": {
               "status": "passed",
-              "duration": 7667000000
+              "duration": 10842000000
             }
           },
           {
@@ -420,11 +342,11 @@
               }
             ],
             "keyword": "Quando ",
-            "line": 49,
+            "line": 44,
             "name": "preencho as seguintes informações de cadastro de usuário:",
             "result": {
               "status": "passed",
-              "duration": 1348000000
+              "duration": 1865000000
             }
           },
           {
@@ -519,189 +441,136 @@
               }
             ],
             "keyword": "E ",
-            "line": 52,
+            "line": 47,
             "name": "preencho os seguintes campos de cadastro de usuário:",
             "result": {
               "status": "passed",
-              "duration": 26399000000
+              "duration": 32144000000
             }
           },
           {
             "arguments": [],
+            "keyword": "E ",
+            "line": 60,
+            "name": "clico no botão \"Salvar\"",
+            "result": {
+              "status": "passed",
+              "duration": 3400000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 61,
+            "name": "o sistema deve exibir uma mensagem de sucesso indicando que o usuário foi cadastrado",
+            "result": {
+              "status": "passed",
+              "duration": 604000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 62,
+            "name": "vou à página de consulta de usuário",
+            "result": {
+              "status": "passed",
+              "duration": 3688000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 63,
+            "name": "busco o usuário pelo cpf cadastrado",
+            "result": {
+              "status": "passed",
+              "duration": 4909000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 64,
+            "name": "devo visualizar o usuário na grid",
+            "result": {
+              "status": "passed",
+              "duration": 581000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "label",
+                      "campo"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CPF",
+                      "cpf"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Nome",
+                      "nome"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Email",
+                      "email"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Data de Nascimento",
+                      "dtNascimentoInvertida"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Gênero",
+                      "genero"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Celular",
+                      "celular"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CEP",
+                      "cep"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Numero",
+                      "numero"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complemento",
+                      "complemento"
+                    ]
+                  }
+                ]
+              }
+            ],
             "keyword": "E ",
             "line": 65,
-            "name": "clico no botão \"Salvar\"",
+            "name": "a consulta exibir os seguintes campos do usuário:",
             "result": {
               "status": "passed",
-              "duration": 2744000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Então ",
-            "line": 66,
-            "name": "o sistema deve exibir uma mensagem de sucesso indicando que o usuário foi cadastrado",
-            "result": {
-              "status": "passed",
-              "duration": 322000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "cadastro-de-usuário-preposto-no-sistema-signo;cadastro-com-cpf-inválido",
-        "keyword": "Scenario",
-        "line": 69,
-        "name": "Cadastro com CPF inválido",
-        "tags": [
-          {
-            "name": "@cadastro-usuario",
-            "line": 68
-          },
-          {
-            "name": "@cadastro-usuario",
-            "line": 68
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Dado ",
-            "line": 5,
-            "name": "que estou na página de cadastro de usuário do Signo",
-            "result": {
-              "status": "passed",
-              "duration": 7444000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "campo",
-                      "formcontrolname",
-                      "valor",
-                      "type"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "qualificação",
-                      "qualificacao",
-                      "Preposto",
-                      "dropdown"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Quando ",
-            "line": 70,
-            "name": "preencho as seguintes informações de cadastro de usuário:",
-            "result": {
-              "status": "passed",
-              "duration": 1389000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "campo",
-                      "formcontrolname",
-                      "valor",
-                      "type"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "cpf",
-                      "cpfCnpj",
-                      "12345678901",
-                      "input"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "E ",
-            "line": 73,
-            "name": "preencho as seguintes informações de cadastro de usuário:",
-            "result": {
-              "status": "passed",
-              "duration": 1882000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "E ",
-            "line": 76,
-            "name": "clico no botão \"Salvar\"",
-            "result": {
-              "status": "passed",
-              "duration": 2460000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "campo",
-                      "formcontrolname",
-                      "type"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "nome",
-                      "nome",
-                      "input"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "email",
-                      "email",
-                      "input"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "dtNascimento",
-                      "dtNascimento",
-                      "calendar"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "genero",
-                      "genero",
-                      "dropdown"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "celular",
-                      "celular",
-                      "input"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Então ",
-            "line": 77,
-            "name": "o sistema deve manter os demais campos de cadastro desabilitados",
-            "result": {
-              "status": "passed",
-              "duration": 252000000
+              "duration": 7985000000
             }
           }
         ]

@@ -1,0 +1,629 @@
+[
+  {
+    "keyword": "Funcionalidade",
+    "name": "Edição de Usuário Sociedade no Sistema Signo",
+    "line": 2,
+    "id": "edição-de-usuário-sociedade-no-sistema-signo",
+    "tags": [],
+    "uri": "edicao-usuario-sociedade.feature",
+    "elements": [
+      {
+        "id": "edição-de-usuário-sociedade-no-sistema-signo;cadastrar-e-editar-usuário-do-tipo-sociedade---estrangeiro",
+        "keyword": "Scenario",
+        "line": 166,
+        "name": "Cadastrar e Editar usuário do tipo Sociedade - Estrangeiro",
+        "tags": [
+          {
+            "name": "@edicao-usuario",
+            "line": 165
+          },
+          {
+            "name": "@edicao-sociedade",
+            "line": 165
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 5,
+            "name": "que estou na página de cadastro de usuário do Signo",
+            "result": {
+              "status": "passed",
+              "duration": 9310000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "campo",
+                      "formcontrolname",
+                      "valor",
+                      "type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "qualificação",
+                      "qualificacao",
+                      "Sociedade",
+                      "dropdown"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "tipo usuário",
+                      "tipoUsuario",
+                      "Estrangeiro",
+                      "dropdown"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Quando ",
+            "line": 167,
+            "name": "preencho as seguintes informações de cadastro de usuário:",
+            "result": {
+              "status": "passed",
+              "duration": 2297000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "campo",
+                      "formcontrolname",
+                      "type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "cpf",
+                      "cpfCnpj",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "numeroDocumento",
+                      "numeroDocumento",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "nome",
+                      "nome",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "email",
+                      "email",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "dtNascimento",
+                      "dtNascimento",
+                      "calendar"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "genero",
+                      "genero",
+                      "dropdown"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "celular",
+                      "celular",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "cep",
+                      "cep",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "numero",
+                      "numero",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "complemento",
+                      "complemento",
+                      "input"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "E ",
+            "line": 171,
+            "name": "preencho os seguintes campos de cadastro de usuário:",
+            "result": {
+              "status": "passed",
+              "duration": 20685000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 183,
+            "name": "clico no botão \"Salvar\"",
+            "result": {
+              "status": "passed",
+              "duration": 2515000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 184,
+            "name": "o sistema deve exibir uma mensagem de sucesso indicando que o usuário foi cadastrado",
+            "result": {
+              "status": "passed",
+              "duration": 243000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 185,
+            "name": "vou à página de consulta de usuário",
+            "result": {
+              "status": "passed",
+              "duration": 2312000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 186,
+            "name": "busco o usuário pelo nome cadastrado",
+            "result": {
+              "status": "passed",
+              "duration": 3075000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 187,
+            "name": "devo visualizar o usuário na grid",
+            "result": {
+              "status": "passed",
+              "duration": 572000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "label",
+                      "campo"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Documento de Identificação",
+                      "numeroDocumento"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Nome",
+                      "nome"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Email",
+                      "email"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Data de Nascimento",
+                      "dtNascimentoInvertida"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Gênero",
+                      "genero"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Celular",
+                      "celular"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CEP",
+                      "cep"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Numero",
+                      "numero"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complemento",
+                      "complemento"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "E ",
+            "line": 188,
+            "name": "a consulta exibir os seguintes campos do usuário:",
+            "result": {
+              "status": "passed",
+              "duration": 5783000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 199,
+            "name": "volto para a grid de usuários",
+            "result": {
+              "status": "passed",
+              "duration": 1044000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 200,
+            "name": "busco o usuário pelo nome cadastrado",
+            "result": {
+              "status": "passed",
+              "duration": 3340000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 201,
+            "name": "clico no botão \"Editar\"",
+            "result": {
+              "status": "passed",
+              "duration": 1999000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "campo",
+                      "formcontrolname",
+                      "type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "cpf",
+                      "cpfCnpj",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "nome",
+                      "nome",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "email",
+                      "email",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "dtNascimento",
+                      "dtNascimento",
+                      "calendar"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "genero",
+                      "genero",
+                      "dropdown"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "celular",
+                      "celular",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "cep",
+                      "cep",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "numero",
+                      "numero",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "complemento",
+                      "complemento",
+                      "input"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Então ",
+            "line": 202,
+            "name": "o formulário de edição de usuário deve apresentar os seguintes campos devidamente populados:",
+            "result": {
+              "status": "passed",
+              "duration": 8302000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "campo",
+                      "formcontrolname",
+                      "type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "cpf",
+                      "cpfCnpj",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "numeroDocumento",
+                      "numeroDocumento",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "nome",
+                      "nome",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "email",
+                      "email",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "dtNascimento",
+                      "dtNascimento",
+                      "calendar"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "genero",
+                      "genero",
+                      "dropdown"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "celular",
+                      "celular",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "cep",
+                      "cep",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "numero",
+                      "numero",
+                      "input"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "complemento",
+                      "complemento",
+                      "input"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Quando ",
+            "line": 213,
+            "name": "edito os seguintes campos do usuário:",
+            "result": {
+              "status": "passed",
+              "duration": 35445000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 225,
+            "name": "clico no botão \"Salvar\"",
+            "result": {
+              "status": "passed",
+              "duration": 3028000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 226,
+            "name": "o sistema deve exibir uma mensagem de sucesso indicando que o usuário foi editado",
+            "result": {
+              "status": "passed",
+              "duration": 786000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 227,
+            "name": "vou à página de consulta de usuário",
+            "result": {
+              "status": "passed",
+              "duration": 3854000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 228,
+            "name": "busco o usuário pelo nome atualizado",
+            "result": {
+              "status": "passed",
+              "duration": 5315000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 229,
+            "name": "devo visualizar o usuário atualizado na grid",
+            "result": {
+              "status": "passed",
+              "duration": 1322000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "label",
+                      "campo"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Documento de Identificação",
+                      "numeroDocumento"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Nome",
+                      "nome"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Email",
+                      "email"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Data de Nascimento",
+                      "dtNascimentoInvertida"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Gênero",
+                      "genero"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Celular",
+                      "celular"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CEP",
+                      "cep"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Numero",
+                      "numero"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complemento",
+                      "complemento"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "E ",
+            "line": 230,
+            "name": "a consulta exibir os seguintes campos atualizados do usuário:",
+            "result": {
+              "status": "passed",
+              "duration": 7939000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
