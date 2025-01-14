@@ -1,0 +1,281 @@
+[
+  {
+    "description": "  Como um usuário administrador\n  Desejo que as regras de preenchimento de folhas sejam aplicadas no envio de atos\n  Para que eu possa garantir a consistência e a precisão dos dados enviados",
+    "keyword": "Funcionalidade",
+    "name": "Aplicação das regras de preenchimento de folhas no envio de atos",
+    "line": 3,
+    "id": "aplicação-das-regras-de-preenchimento-de-folhas-no-envio-de-atos",
+    "tags": [],
+    "uri": "regra-complemento-folha.feature",
+    "elements": [
+      {
+        "id": "aplicação-das-regras-de-preenchimento-de-folhas-no-envio-de-atos;não-permitir-a-adição-do-complemento-da-folha-quando-a-folha-inicial-é-diferente-da-folha-final---folha-inicial",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Não permitir a adição do complemento da folha quando a folha inicial é diferente da folha final - Folha Inicial",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que estou na funcionalidade de envio de atos nas central \"CESDI\"",
+            "result": {
+              "status": "passed",
+              "duration": 13867000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Folha Inicial",
+                      "Folha Final"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "001",
+                      "002"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Dado ",
+            "line": 13,
+            "name": "que as folhas a serem preenchidas são:",
+            "result": {
+              "status": "passed",
+              "duration": 2380000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 16,
+            "name": "eu tentar adicionar o complemento da folha \"inicial\" \"A\"",
+            "result": {
+              "status": "passed",
+              "duration": 1801000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 17,
+            "name": "eu devo ver a mensagem de erro \"Folha inicial diferente de folha final! Complemento não deve ser preenchido\"",
+            "result": {
+              "status": "passed",
+              "duration": 166000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "aplicação-das-regras-de-preenchimento-de-folhas-no-envio-de-atos;não-permitir-a-adição-do-complemento-da-folha-quando-a-folha-inicial-é-diferente-da-folha-final---folha-final",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Não permitir a adição do complemento da folha quando a folha inicial é diferente da folha final - Folha Final",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que estou na funcionalidade de envio de atos nas central \"CESDI\"",
+            "result": {
+              "status": "passed",
+              "duration": 12409000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Folha Inicial",
+                      "Folha Final"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "001",
+                      "002"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Dado ",
+            "line": 20,
+            "name": "que as folhas a serem preenchidas são:",
+            "result": {
+              "status": "passed",
+              "duration": 2651000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 23,
+            "name": "eu tentar adicionar o complemento da folha \"final\" \"A\"",
+            "result": {
+              "status": "passed",
+              "duration": 1326000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 24,
+            "name": "eu devo ver a mensagem de erro \"Folha inicial diferente de folha final! Complemento não deve ser preenchido\"",
+            "result": {
+              "status": "passed",
+              "duration": 118000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "aplicação-das-regras-de-preenchimento-de-folhas-no-envio-de-atos;permitir-a-adição-do-complemento-da-folha-quando-a-folha-inicial-é-igual-à-folha-final---folha-inicial",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Permitir a adição do complemento da folha quando a folha inicial é igual à folha final - Folha Inicial",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que estou na funcionalidade de envio de atos nas central \"CESDI\"",
+            "result": {
+              "status": "passed",
+              "duration": 12048000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Folha Inicial",
+                      "Folha Final"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "001",
+                      "001"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Dado ",
+            "line": 27,
+            "name": "que as folhas a serem preenchidas são:",
+            "result": {
+              "status": "passed",
+              "duration": 2168000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 30,
+            "name": "eu tentar adicionar o complemento da folha \"inicial\" \"A\"",
+            "result": {
+              "status": "passed",
+              "duration": 1928000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 31,
+            "name": "eu não devo ver a mensagem de erro \"Folha inicial diferente de folha final! Complemento não deve ser preenchido\"",
+            "result": {
+              "status": "passed",
+              "duration": 77000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "aplicação-das-regras-de-preenchimento-de-folhas-no-envio-de-atos;permitir-a-adição-do-complemento-da-folha-quando-a-folha-inicial-é-igual-à-folha-final---folha-final",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Permitir a adição do complemento da folha quando a folha inicial é igual à folha final - Folha Final",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 10,
+            "name": "que estou na funcionalidade de envio de atos nas central \"CESDI\"",
+            "result": {
+              "status": "passed",
+              "duration": 9526000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Folha Inicial",
+                      "Folha Final"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "001",
+                      "001"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Dado ",
+            "line": 34,
+            "name": "que as folhas a serem preenchidas são:",
+            "result": {
+              "status": "passed",
+              "duration": 2731000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 37,
+            "name": "eu tentar adicionar o complemento da folha \"final\" \"A\"",
+            "result": {
+              "status": "passed",
+              "duration": 1397000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 38,
+            "name": "eu não devo ver a mensagem de erro \"Folha inicial diferente de folha final! Complemento não deve ser preenchido\"",
+            "result": {
+              "status": "passed",
+              "duration": 66000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,225 @@
+[
+  {
+    "description": "  Como usuário do Signo que possui a funcionalidade de envio/retificação de ato\n  Eu quero que seja possível retificar um ato sem a obrigatoriedade do CPF quando preenchido algum outro documento\n  Para reforçar a segurança do sistema e não será mais utilizado o fornecimento de um CPF fictício",
+    "keyword": "Funcionalidade",
+    "name": "Retificação de atos sem obrigatoriedade de CPF na Central RCTO",
+    "line": 3,
+    "id": "retificação-de-atos-sem-obrigatoriedade-de-cpf-na-central-rcto",
+    "tags": [
+      {
+        "name": "@regra-obrigatoriedade-cpf",
+        "line": 2
+      }
+    ],
+    "uri": "regra-obrigatoriedade-cpf.feature",
+    "elements": [
+      {
+        "id": "retificação-de-atos-sem-obrigatoriedade-de-cpf-na-central-rcto;retificar-ato-anterior-a-01/01/2000-com-documento-preenchido",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Retificar ato anterior a 01/01/2000 com documento preenchido",
+        "tags": [
+          {
+            "name": "@regra-obrigatoriedade-cpf",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que estou na funcionalidade de retificação de atos na central \"RCTO\"",
+            "result": {
+              "status": "passed",
+              "duration": 14811000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "seleciono o tipo do ato como \"Testamento Público\"",
+            "result": {
+              "status": "passed",
+              "duration": 2154000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 13,
+            "name": "preencho a data do ato com \"01/01/1999\"",
+            "result": {
+              "status": "passed",
+              "duration": 2189000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 14,
+            "name": "vou ao step \"Informações da Parte\"",
+            "result": {
+              "status": "passed",
+              "duration": 859000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Tipo de documento",
+                      "Número do documento"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CNH",
+                      "123456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "E ",
+            "line": 15,
+            "name": "preencho as seguintes informações de documento:",
+            "result": {
+              "status": "passed",
+              "duration": 4020000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 18,
+            "name": "eu tentar retificar o ato",
+            "result": {
+              "status": "passed",
+              "duration": 1039000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 19,
+            "name": "vou ao step \"Informações da Parte\"",
+            "result": {
+              "status": "passed",
+              "duration": 884000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 20,
+            "name": "o formulário não deve exibir a mensagem \"Campo obrigatório!\" no campo \"CPF\"",
+            "result": {
+              "status": "passed",
+              "duration": 1907000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "retificação-de-atos-sem-obrigatoriedade-de-cpf-na-central-rcto;retificar-ato-posterior-a-01/01/2000-sem-documento-preenchido",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Retificar ato posterior a 01/01/2000 sem documento preenchido",
+        "tags": [
+          {
+            "name": "@regra-obrigatoriedade-cpf",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que estou na funcionalidade de retificação de atos na central \"RCTO\"",
+            "result": {
+              "status": "passed",
+              "duration": 13139000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "seleciono o tipo do ato como \"Testamento Público\"",
+            "result": {
+              "status": "passed",
+              "duration": 1463000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 23,
+            "name": "preencho a data do ato com \"01/01/2001\"",
+            "result": {
+              "status": "passed",
+              "duration": 2174000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 24,
+            "name": "vou ao step \"Informações da Parte\"",
+            "result": {
+              "status": "passed",
+              "duration": 913000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 25,
+            "name": "não preencho as informações de documento",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 26,
+            "name": "eu tentar retificar o ato",
+            "result": {
+              "status": "passed",
+              "duration": 1049000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 27,
+            "name": "vou ao step \"Informações da Parte\"",
+            "result": {
+              "status": "passed",
+              "duration": 715000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 28,
+            "name": "o formulário deve exibir a mensagem \"Campo obrigatório!\" no campo \"CPF\"",
+            "result": {
+              "status": "passed",
+              "duration": 1893000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

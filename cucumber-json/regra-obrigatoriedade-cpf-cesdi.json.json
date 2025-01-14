@@ -1,0 +1,245 @@
+[
+  {
+    "description": "  Como usuário do Signo que possui a funcionalidade de envio/retificação de ato\n  Eu quero que seja possível retificar um ato sem a obrigatoriedade do CPF quando preenchido algum outro documento\n  Para reforçar a segurança do sistema e não será mais utilizado o fornecimento de um CPF fictício",
+    "keyword": "Funcionalidade",
+    "name": "Retificação de atos sem obrigatoriedade de CPF na Central CESDI",
+    "line": 3,
+    "id": "retificação-de-atos-sem-obrigatoriedade-de-cpf-na-central-cesdi",
+    "tags": [
+      {
+        "name": "@regra-obrigatoriedade-cpf",
+        "line": 2
+      }
+    ],
+    "uri": "regra-obrigatoriedade-cpf.feature",
+    "elements": [
+      {
+        "id": "retificação-de-atos-sem-obrigatoriedade-de-cpf-na-central-cesdi;retificar-ato-anterior-a-01/01/2000-com-documento-preenchido",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Retificar ato anterior a 01/01/2000 com documento preenchido",
+        "tags": [
+          {
+            "name": "@regra-obrigatoriedade-cpf",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que estou na funcionalidade de retificação de atos na central \"CESDI\"",
+            "result": {
+              "status": "passed",
+              "duration": 14727000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "seleciono o tipo do ato como \"Inventário\"",
+            "result": {
+              "status": "passed",
+              "duration": 2176000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 13,
+            "name": "preencho a data do ato com \"01/01/1999\"",
+            "result": {
+              "status": "passed",
+              "duration": 2360000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 14,
+            "name": "vou ao step \"Informações da Parte\"",
+            "result": {
+              "status": "passed",
+              "duration": 1041000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 15,
+            "name": "preencho a qualidade da parte com \"INVENTARIANTE\"",
+            "result": {
+              "status": "passed",
+              "duration": 6422000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Tipo de documento",
+                      "Número do documento"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CNH",
+                      "123456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "E ",
+            "line": 16,
+            "name": "preencho as seguintes informações de documento:",
+            "result": {
+              "status": "passed",
+              "duration": 5889000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 19,
+            "name": "eu tentar retificar o ato",
+            "result": {
+              "status": "passed",
+              "duration": 814000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 20,
+            "name": "vou ao step \"Informações da Parte\"",
+            "result": {
+              "status": "passed",
+              "duration": 858000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 21,
+            "name": "o formulário não deve exibir a mensagem \"Campo obrigatório!\" no campo \"CPF/CNPJ\"",
+            "result": {
+              "status": "passed",
+              "duration": 603000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "retificação-de-atos-sem-obrigatoriedade-de-cpf-na-central-cesdi;retificar-ato-posterior-a-01/01/2000-sem-documento-preenchido",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Retificar ato posterior a 01/01/2000 sem documento preenchido",
+        "tags": [
+          {
+            "name": "@regra-obrigatoriedade-cpf",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que estou na funcionalidade de retificação de atos na central \"CESDI\"",
+            "result": {
+              "status": "passed",
+              "duration": 13334000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "seleciono o tipo do ato como \"Inventário\"",
+            "result": {
+              "status": "passed",
+              "duration": 2025000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 24,
+            "name": "preencho a data do ato com \"01/01/2001\"",
+            "result": {
+              "status": "passed",
+              "duration": 2313000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 25,
+            "name": "vou ao step \"Informações da Parte\"",
+            "result": {
+              "status": "passed",
+              "duration": 872000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 26,
+            "name": "preencho a qualidade da parte com \"INVENTARIANTE\"",
+            "result": {
+              "status": "passed",
+              "duration": 5603000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 27,
+            "name": "não preencho as informações de documento",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 28,
+            "name": "eu tentar retificar o ato",
+            "result": {
+              "status": "passed",
+              "duration": 1733000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 29,
+            "name": "vou ao step \"Informações da Parte\"",
+            "result": {
+              "status": "passed",
+              "duration": 1892000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 30,
+            "name": "o formulário deve exibir a mensagem \"Campo obrigatório!\" no campo \"CPF/CNPJ\"",
+            "result": {
+              "status": "passed",
+              "duration": 1340000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

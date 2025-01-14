@@ -1,0 +1,141 @@
+[
+  {
+    "keyword": "Funcionalidade",
+    "name": "Cadastrar novo usuário via página de pedido administrativo",
+    "line": 3,
+    "id": "cadastrar-novo-usuário-via-página-de-pedido-administrativo",
+    "tags": [],
+    "uri": "cadastrar-novo-usuario.feature",
+    "elements": [
+      {
+        "id": "cadastrar-novo-usuário-via-página-de-pedido-administrativo;ser-direcionado-para-página-de-cadastro",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "ser direcionado para página de cadastro",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que estou logado na aplicação",
+            "result": {
+              "status": "passed",
+              "duration": 11006000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "CPF",
+                      "Tipo de Usuário"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "49033942712",
+                      "Pessoa Física"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Quando ",
+            "line": 9,
+            "name": "estou na página de pedido presencial e inserir um cpf não cadastrado no sistema",
+            "result": {
+              "status": "passed",
+              "duration": 3565000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 12,
+            "name": "deve ser possível ver a mensagem \"Usuário não encontrado.\"",
+            "result": {
+              "status": "passed",
+              "duration": 588000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "CPF",
+                      "Tipo Pessoa",
+                      "Nome do Usuário",
+                      "E-mail",
+                      "Celular"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "49033942712",
+                      "Pessoa Física",
+                      "Teste de Cadastro",
+                      "testedecadastro@gmail.com",
+                      "62995816032"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Quando ",
+            "line": 13,
+            "name": "eu adiciono as informações da grid de informações do cadastro",
+            "result": {
+              "status": "passed",
+              "duration": 11296000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "CEP",
+                      "Número",
+                      "País"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "74373110",
+                      "150",
+                      "Brasil"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "E ",
+            "line": 16,
+            "name": "adicionar informações na grid de dados de endereço",
+            "result": {
+              "status": "passed",
+              "duration": 6406000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 19,
+            "name": "o sistema não deve apresentar mensagem de erro",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

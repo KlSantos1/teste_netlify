@@ -410,13 +410,6 @@ ul.quick-list li i {
     max-width: 100%;
 }
 
-.videoCapture{
-    width: 50%;
-    height: 50%;
-    max-height: 100%;
-    max-width: 100%;
-}
-
 /* Features / Scenarios */
 ul.panel_toolbox li .step {
     border-radius: 50%;
@@ -741,18 +734,25 @@ input#darkCheck:checked ~ label>svg#moon {
                 
                     
                     
+                        <i class="fa fa-tag fa-lg"></i>
+                        
+                            <span class="tag">@regra-obrigatoriedade-cpf</span>
+                        
+                    
                 
             </div>
             <h1>Feature:
-                <small>Consulta de Usuário Escrevente/Preposto no Sistema Signo</small>
+                <small>Retificação de atos sem obrigatoriedade de CPF na Central CESDI</small>
             </h1>
             
                 <p>
+                    <strong>Description: </strong>   Como usuário do Signo que possui a funcionalidade de envio/retificação de ato<br>  Eu quero que seja possível retificar um ato sem a obrigatoriedade do CPF quando preenchido algum outro documento<br>  Para reforçar a segurança do sistema e não será mais utilizado o fornecimento de um CPF fictício </p>
+                
                <p><strong>File name:</strong>
-                    consulta-usuario-preposto.feature
+                    regra-obrigatoriedade-cpf.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    consulta-usuario-preposto.feature</p>
+                    regra-obrigatoriedade-cpf.feature</p>
             
         </div>
 
@@ -822,7 +822,7 @@ input#darkCheck:checked ~ label>svg#moon {
         
             <tr>
                 <th> Total duration:</th>
-                <tr><td>00:02:07.918</td></tr>
+                <tr><td>00:01:07.686</td></tr>
             </tr>
         
     </table>
@@ -914,17 +914,15 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         
                         
-                            <i class="fa fa-tags fa-lg"></i>
+                            <i class="fa fa-tag fa-lg"></i>
                             
-                                <span class="tag">@consulta-usuario</span>
-                            
-                                <span class="tag">@consulta-preposto</span>
+                                <span class="tag">@regra-obrigatoriedade-cpf</span>
                             
                         
                     
                 </div>
 
-                <h2>Scenario: <small>Cadastrar e Consultar usuário do tipo Escrevente/Preposto por nome</small></h2>
+                <h2>Scenario: <small>Retificar ato anterior a 01/01/2000 com documento preenchido</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -950,7 +948,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         <li>
                             <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:01:01.900</span>
+                            <span style=padding-right:5em>00:00:40.511</span>
                         </li>
                     
                 </ul>
@@ -976,13 +974,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Dado </span>
 
                                     
-                                        que estou na página de cadastro de usuário do Signo
+                                        que estou na funcionalidade de retificação de atos na central "CESDI"
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:07.977</span>
+                                            <span class="duration">00:00:17.114</span>
                                         
                                     
 
@@ -994,9 +992,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
-
                                     
-
                                     
 
                                     
@@ -1010,6 +1006,68 @@ input#darkCheck:checked ~ label>svg#moon {
                         
                             
 
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">E </span>
+
+                                    
+                                        seleciono o tipo do ato como "Inventário"
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:02.279</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
                             
 
                             
@@ -1044,13 +1102,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Quando </span>
 
                                     
-                                        preencho as seguintes informações de cadastro de usuário:
+                                        preencho a data do ato com "01/01/1999"
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:01.227</span>
+                                            <span class="duration">00:00:02.337</span>
                                         
                                     
 
@@ -1062,9 +1120,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
-
                                     
-
                                     
 
                                     
@@ -1078,6 +1134,196 @@ input#darkCheck:checked ~ label>svg#moon {
                         
                             
 
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">E </span>
+
+                                    
+                                        vou ao step "Informações da Parte"
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.903</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">E </span>
+
+                                    
+                                        preencho a qualidade da parte com "INVENTARIANTE"
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:05.772</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">E </span>
+
+                                    
+                                        preencho as seguintes informações de documento:
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:07.398</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
                             
 
                             
@@ -1100,13 +1346,9 @@ input#darkCheck:checked ~ label>svg#moon {
                                             <tr>
                                                 
                                                 
-                                                    <th>campo</th>
+                                                    <th>Tipo de documento</th>
                                                 
-                                                    <th>formcontrolname</th>
-                                                
-                                                    <th>valor</th>
-                                                
-                                                    <th>type</th>
+                                                    <th>Número do documento</th>
                                                 
                                             </tr>
 
@@ -1114,13 +1356,9 @@ input#darkCheck:checked ~ label>svg#moon {
                                                 <tr>
                                                     
                                                     
-                                                        <td>qualificação</td>
+                                                        <td>CNH</td>
                                                     
-                                                        <td>qualificacao</td>
-                                                    
-                                                        <td>Preposto</td>
-                                                    
-                                                        <td>dropdown</td>
+                                                        <td>123456789</td>
                                                     
                                                 </tr>
                                             
@@ -1129,353 +1367,6 @@ input#darkCheck:checked ~ label>svg#moon {
                                 </div>
 
                                 
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">E </span>
-
-                                    
-                                        preencho os seguintes campos de cadastro de usuário:
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:31.829</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                                <div class="scenario-scroll-bar">
-                                    
-                                        <table class="table arguments">
-                                            
-                                            <tr>
-                                                
-                                                
-                                                    <th>campo</th>
-                                                
-                                                    <th>formcontrolname</th>
-                                                
-                                                    <th>type</th>
-                                                
-                                            </tr>
-
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>cpf</td>
-                                                    
-                                                        <td>cpfCnpj</td>
-                                                    
-                                                        <td>input</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>nome</td>
-                                                    
-                                                        <td>nome</td>
-                                                    
-                                                        <td>input</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>email</td>
-                                                    
-                                                        <td>email</td>
-                                                    
-                                                        <td>input</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>dtNascimento</td>
-                                                    
-                                                        <td>dtNascimento</td>
-                                                    
-                                                        <td>calendar</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>genero</td>
-                                                    
-                                                        <td>genero</td>
-                                                    
-                                                        <td>dropdown</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>celular</td>
-                                                    
-                                                        <td>celular</td>
-                                                    
-                                                        <td>input</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>cartorio</td>
-                                                    
-                                                        <td>cartorio</td>
-                                                    
-                                                        <td>cartorio</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>attachment</td>
-                                                    
-                                                        <td>attachment</td>
-                                                    
-                                                        <td>attachment</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>cep</td>
-                                                    
-                                                        <td>cep</td>
-                                                    
-                                                        <td>input</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>numero</td>
-                                                    
-                                                        <td>numero</td>
-                                                    
-                                                        <td>input</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>complemento</td>
-                                                    
-                                                        <td>complemento</td>
-                                                    
-                                                        <td>input</td>
-                                                    
-                                                </tr>
-                                            
-                                        </table>
-                                    
-                                </div>
-
-                                
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">E </span>
-
-                                    
-                                        clico no botão "Salvar"
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:03.260</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Então </span>
-
-                                    
-                                        o sistema deve exibir uma mensagem de sucesso indicando que o usuário foi cadastrado
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:00.525</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
                             
                         
 
@@ -1496,13 +1387,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Quando </span>
 
                                     
-                                        vou à página de consulta de usuário
+                                        eu tentar retificar o ato
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:03.245</span>
+                                            <span class="duration">00:00:01.607</span>
                                         
                                     
 
@@ -1514,9 +1405,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
-
                                     
-
                                     
 
                                     
@@ -1528,8 +1417,6 @@ input#darkCheck:checked ~ label>svg#moon {
                             </div>
 
                         
-                            
-
                             
 
                             
@@ -1564,13 +1451,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">E </span>
 
                                     
-                                        busco o usuário pelo nome cadastrado
+                                        vou ao step "Informações da Parte"
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:04.221</span>
+                                            <span class="duration">00:00:01.858</span>
                                         
                                     
 
@@ -1582,9 +1469,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
-
                                     
-
                                     
 
                                     
@@ -1596,8 +1481,6 @@ input#darkCheck:checked ~ label>svg#moon {
                             </div>
 
                         
-                            
-
                             
 
                             
@@ -1632,13 +1515,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Então </span>
 
                                     
-                                        devo visualizar o usuário na grid
+                                        o formulário não deve exibir a mensagem "Campo obrigatório!" no campo "CPF/CNPJ"
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.753</span>
+                                            <span class="duration">00:00:01.243</span>
                                         
                                     
 
@@ -1650,9 +1533,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
-
                                     
-
                                     
 
                                     
@@ -1675,180 +1556,9 @@ input#darkCheck:checked ~ label>svg#moon {
                             
 
                             
-
-                            
                         
 
                         
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">E </span>
-
-                                    
-                                        a consulta exibir os seguintes campos do usuário:
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:08.863</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                                <div class="scenario-scroll-bar">
-                                    
-                                        <table class="table arguments">
-                                            
-                                            <tr>
-                                                
-                                                
-                                                    <th>label</th>
-                                                
-                                                    <th>campo</th>
-                                                
-                                            </tr>
-
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>CPF</td>
-                                                    
-                                                        <td>cpf</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>Nome</td>
-                                                    
-                                                        <td>nome</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>Email</td>
-                                                    
-                                                        <td>email</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>Data de Nascimento</td>
-                                                    
-                                                        <td>dtNascimentoInvertida</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>Gênero</td>
-                                                    
-                                                        <td>genero</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>Celular</td>
-                                                    
-                                                        <td>celular</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>CEP</td>
-                                                    
-                                                        <td>cep</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>Numero</td>
-                                                    
-                                                        <td>numero</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>Complemento</td>
-                                                    
-                                                        <td>complemento</td>
-                                                    
-                                                </tr>
-                                            
-                                        </table>
-                                    
-                                </div>
-
-                                
                             
                         
 
@@ -1866,17 +1576,15 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         
                         
-                            <i class="fa fa-tags fa-lg"></i>
+                            <i class="fa fa-tag fa-lg"></i>
                             
-                                <span class="tag">@consulta-usuario</span>
-                            
-                                <span class="tag">@consulta-preposto</span>
+                                <span class="tag">@regra-obrigatoriedade-cpf</span>
                             
                         
                     
                 </div>
 
-                <h2>Scenario: <small>Cadastrar e Consultar usuário do tipo Escrevente/Preposto por CPF</small></h2>
+                <h2>Scenario: <small>Retificar ato posterior a 01/01/2000 sem documento preenchido</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1902,7 +1610,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         <li>
                             <span style="font-size:1.2em"> Duration:</span>
-                            <span style=padding-right:5em>00:01:06.018</span>
+                            <span style=padding-right:5em>00:00:27.175</span>
                         </li>
                     
                 </ul>
@@ -1928,13 +1636,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Dado </span>
 
                                     
-                                        que estou na página de cadastro de usuário do Signo
+                                        que estou na funcionalidade de retificação de atos na central "CESDI"
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:10.842</span>
+                                            <span class="duration">00:00:13.395</span>
                                         
                                     
 
@@ -1946,9 +1654,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
-
                                     
-
                                     
 
                                     
@@ -1962,6 +1668,68 @@ input#darkCheck:checked ~ label>svg#moon {
                         
                             
 
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">E </span>
+
+                                    
+                                        seleciono o tipo do ato como "Inventário"
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:02.091</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
                             
 
                             
@@ -1996,13 +1764,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Quando </span>
 
                                     
-                                        preencho as seguintes informações de cadastro de usuário:
+                                        preencho a data do ato com "01/01/2001"
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:01.865</span>
+                                            <span class="duration">00:00:02.222</span>
                                         
                                     
 
@@ -2014,9 +1782,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
-
                                     
-
                                     
 
                                     
@@ -2039,48 +1805,9 @@ input#darkCheck:checked ~ label>svg#moon {
                             
 
                             
-
-                            
                         
 
                         
-                            
-                                <div class="scenario-scroll-bar">
-                                    
-                                        <table class="table arguments">
-                                            
-                                            <tr>
-                                                
-                                                
-                                                    <th>campo</th>
-                                                
-                                                    <th>formcontrolname</th>
-                                                
-                                                    <th>valor</th>
-                                                
-                                                    <th>type</th>
-                                                
-                                            </tr>
-
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>qualificação</td>
-                                                    
-                                                        <td>qualificacao</td>
-                                                    
-                                                        <td>Preposto</td>
-                                                    
-                                                        <td>dropdown</td>
-                                                    
-                                                </tr>
-                                            
-                                        </table>
-                                    
-                                </div>
-
-                                
                             
                         
 
@@ -2101,13 +1828,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">E </span>
 
                                     
-                                        preencho os seguintes campos de cadastro de usuário:
+                                        vou ao step "Informações da Parte"
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:32.144</span>
+                                            <span class="duration">00:00:01.138</span>
                                         
                                     
 
@@ -2119,9 +1846,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
-
                                     
-
                                     
 
                                     
@@ -2144,154 +1869,9 @@ input#darkCheck:checked ~ label>svg#moon {
                             
 
                             
-
-                            
                         
 
                         
-                            
-                                <div class="scenario-scroll-bar">
-                                    
-                                        <table class="table arguments">
-                                            
-                                            <tr>
-                                                
-                                                
-                                                    <th>campo</th>
-                                                
-                                                    <th>formcontrolname</th>
-                                                
-                                                    <th>type</th>
-                                                
-                                            </tr>
-
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>cpf</td>
-                                                    
-                                                        <td>cpfCnpj</td>
-                                                    
-                                                        <td>input</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>nome</td>
-                                                    
-                                                        <td>nome</td>
-                                                    
-                                                        <td>input</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>email</td>
-                                                    
-                                                        <td>email</td>
-                                                    
-                                                        <td>input</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>dtNascimento</td>
-                                                    
-                                                        <td>dtNascimento</td>
-                                                    
-                                                        <td>calendar</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>genero</td>
-                                                    
-                                                        <td>genero</td>
-                                                    
-                                                        <td>dropdown</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>celular</td>
-                                                    
-                                                        <td>celular</td>
-                                                    
-                                                        <td>input</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>cartorio</td>
-                                                    
-                                                        <td>cartorio</td>
-                                                    
-                                                        <td>cartorio</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>attachment</td>
-                                                    
-                                                        <td>attachment</td>
-                                                    
-                                                        <td>attachment</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>cep</td>
-                                                    
-                                                        <td>cep</td>
-                                                    
-                                                        <td>input</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>numero</td>
-                                                    
-                                                        <td>numero</td>
-                                                    
-                                                        <td>input</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>complemento</td>
-                                                    
-                                                        <td>complemento</td>
-                                                    
-                                                        <td>input</td>
-                                                    
-                                                </tr>
-                                            
-                                        </table>
-                                    
-                                </div>
-
-                                
                             
                         
 
@@ -2312,13 +1892,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">E </span>
 
                                     
-                                        clico no botão "Salvar"
+                                        preencho a qualidade da parte com "INVENTARIANTE"
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:03.400</span>
+                                            <span class="duration">00:00:05.231</span>
                                         
                                     
 
@@ -2330,9 +1910,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
-
                                     
-
                                     
 
                                     
@@ -2344,8 +1922,6 @@ input#darkCheck:checked ~ label>svg#moon {
                             </div>
 
                         
-                            
-
                             
 
                             
@@ -2377,16 +1953,16 @@ input#darkCheck:checked ~ label>svg#moon {
                                 
 
                                 <div class="text">
-                                    <span class="keyword highlight">Então </span>
+                                    <span class="keyword highlight">E </span>
 
                                     
-                                        o sistema deve exibir uma mensagem de sucesso indicando que o usuário foi cadastrado
+                                        não preencho as informações de documento
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.604</span>
+                                            <span class="duration">00:00:00.009</span>
                                         
                                     
 
@@ -2398,9 +1974,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
-
                                     
-
                                     
 
                                     
@@ -2412,8 +1986,6 @@ input#darkCheck:checked ~ label>svg#moon {
                             </div>
 
                         
-                            
-
                             
 
                             
@@ -2448,13 +2020,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Quando </span>
 
                                     
-                                        vou à página de consulta de usuário
+                                        eu tentar retificar o ato
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:03.688</span>
+                                            <span class="duration">00:00:01.642</span>
                                         
                                     
 
@@ -2466,9 +2038,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
-
                                     
-
                                     
 
                                     
@@ -2480,8 +2050,6 @@ input#darkCheck:checked ~ label>svg#moon {
                             </div>
 
                         
-                            
-
                             
 
                             
@@ -2516,13 +2084,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">E </span>
 
                                     
-                                        busco o usuário pelo cpf cadastrado
+                                        vou ao step "Informações da Parte"
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:04.909</span>
+                                            <span class="duration">00:00:00.900</span>
                                         
                                     
 
@@ -2534,9 +2102,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
-
                                     
-
                                     
 
                                     
@@ -2548,8 +2114,6 @@ input#darkCheck:checked ~ label>svg#moon {
                             </div>
 
                         
-                            
-
                             
 
                             
@@ -2584,13 +2148,13 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Então </span>
 
                                     
-                                        devo visualizar o usuário na grid
+                                        o formulário deve exibir a mensagem "Campo obrigatório!" no campo "CPF/CNPJ"
                                         
                                     
 
                                     
                                         
-                                            <span class="duration">00:00:00.581</span>
+                                            <span class="duration">00:00:00.547</span>
                                         
                                     
 
@@ -2602,9 +2166,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
-
                                     
-
                                     
 
                                     
@@ -2627,180 +2189,9 @@ input#darkCheck:checked ~ label>svg#moon {
                             
 
                             
-
-                            
                         
 
                         
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">E </span>
-
-                                    
-                                        a consulta exibir os seguintes campos do usuário:
-                                        
-                                    
-
-                                    
-                                        
-                                            <span class="duration">00:00:07.985</span>
-                                        
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                                <div class="scenario-scroll-bar">
-                                    
-                                        <table class="table arguments">
-                                            
-                                            <tr>
-                                                
-                                                
-                                                    <th>label</th>
-                                                
-                                                    <th>campo</th>
-                                                
-                                            </tr>
-
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>CPF</td>
-                                                    
-                                                        <td>cpf</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>Nome</td>
-                                                    
-                                                        <td>nome</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>Email</td>
-                                                    
-                                                        <td>email</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>Data de Nascimento</td>
-                                                    
-                                                        <td>dtNascimentoInvertida</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>Gênero</td>
-                                                    
-                                                        <td>genero</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>Celular</td>
-                                                    
-                                                        <td>celular</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>CEP</td>
-                                                    
-                                                        <td>cep</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>Numero</td>
-                                                    
-                                                        <td>numero</td>
-                                                    
-                                                </tr>
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>Complemento</td>
-                                                    
-                                                        <td>complemento</td>
-                                                    
-                                                </tr>
-                                            
-                                        </table>
-                                    
-                                </div>
-
-                                
                             
                         
 
